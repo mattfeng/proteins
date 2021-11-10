@@ -1,0 +1,13 @@
+## this is a comment
+
+## This file will be read in just like it's on the command line
+## When commands get longer with more inputs and options, you will really want it in an options file like this! 
+
+## To run with this options.txt file, you would do <path to rosetta>/main/source/bin/score_jd2.default.linuxgccrelease @options.txt
+## For tab-complete, you can also do " @ options.txt" on the command line
+
+-in:file:s 1qys.pdb  ## Use 1qys.pdb as input file
+-out:pdb ## Output a PDB file--this structure will be exactly the same as the input file because we're just scoring, not changing the structure
+
+## By default, this will output a scorefile named "score.sc"
+## To name the scorefile something unique, you can use -out:file:scorefile <name>.sc
